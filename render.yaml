@@ -1,0 +1,7 @@
+services:
+    - type: web
+    name: forex-10-pair
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn bot:app
+    plan: free
